@@ -20,7 +20,7 @@ nav a {
 
 #contact-img {
   width: 100vw;
-  height: 300px;
+  height: 350px;
 }
 #contact-img img {
   width: 100%;
@@ -31,7 +31,7 @@ nav a {
   content: "";
   position: absolute;
   width: 100vw;
-  height: 300px;
+  height: 350px;
   left: 0;
   background-color: rgba(0, 0, 0, 0.55);
 }
@@ -39,7 +39,7 @@ nav a {
   position: absolute;
   z-index: 4;
   color: white;
-  top: 18%;
+  top: 28%;
   left: 35%;
 }
 .text p {
@@ -188,4 +188,25 @@ img.mfp-img {
     width: 100% !important;
     height: 100% !important;
   }
+}
+
+/****************footer*******************/
+
+footer {
+  width: 100%;
+  height: 300px;
+  color: white;
+  background-color: brown;
+  float: inline-end;
+}
+footer > div {
+  width: 50%;
+  display: flex;
+  margin-left: 6rem;
+  justify-content: center;
+  flex-direction: column;
+}
+
+span i {
+  font-size: 1.7rem;
 }

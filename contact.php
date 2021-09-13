@@ -9,6 +9,12 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/179bd1eb00.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/floating-wpp.min.css" />
     <title>Contact us</title>
   </head>
   <body>
@@ -93,7 +99,42 @@
       ?>
     </main>
 
+    <div id="watsapp" class="mb-5"></div>
+
+     <footer class="d-flex justify-content-around">
+      <div>
+        <div class="mb-4">
+          <span><i class="fas fa-map-marker-alt mr-4"></i></span> Banglore,
+          Karnataka
+        </div>
+        <div class="mb-4">
+          <span><i class="fas fa-phone mr-4"></i></span> +91 7878787878
+        </div>
+        <div class="mb-4">
+          <span><i class="fas fa-envelope mr-4"></i></span>
+          support@getplaced.com
+        </div>
+      </div>
+      <div>
+        <h3 class="mb-4">About us</h3>
+        <p class="w-50">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+          temporibus possimus atque veritatis nesciunt ducimus inventore
+          doloribus, odit laudantium accusamus.
+        </p>
+        <div class="mt-3">
+          <span><i class="fab fa-facebook-square ml-5"></i></span
+          ><span><i class="fab fa-instagram-square ml-5"></i></span
+          ><span><i class="fab fa-linkedin ml-5"></i></span
+          ><span><i class="fab fa-twitter ml-5"></i></span>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/floating-wpp.min.js"></script>
+    <script src="main.js"></script>
+
   </body>
 </html>

@@ -16,6 +16,12 @@
     ></script>
     <link rel="stylesheet" href="./assets/floating-wpp.min.css" />
     <title>Contact us</title>
+    <style>
+      .form-control{
+        height: 60px !important;
+        border: 1px solid black !important;
+      }
+    </style>
   </head>
   <body>
     <main>
@@ -56,35 +62,46 @@
           <p>We would love to hear it from you on your query.</p>
         </div>
       </div>
+
+
+
       <h1 class="m-5">Contact Us</h1>
-      <form class="container" method="post" role="form">
+
+      <form  id="form" novalidate class="container content-login needs-validation" method="post" role="form">
         <div id="contact-form">
           <div
             id="contact-about"
             class="d-flex justify-content-between flex-column"
           >
-            <div class="name">
-              <input type="text" name="name" class="p-3" placeholder="Enter Name..." />
+            <div class="name form-group">
+              <input type="text" pattern="[A-Za-z]" name="name" class="p-3 form-control" placeholder="Enter Name..." required/>
+              <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please Enter valid 10-digit Number.</div>
             </div>
-            <div class="phone">
+            <div class="phone form-group ">
               <input
-                name="phone"
-                class="p-3"
+                class="form-control" type="tel"
                 placeholder="Enter your number..."
-              />
+               pattern="[6-9]{1}[0-9]{9}" id="number" name="number" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please Enter valid 10-digit Number.</div>
             </div>
-            <div class="email">
-              <input type="email" name="email" class="p-3" placeholder="Enter E-mail..." />
+            <div class="email form-group">
+              <input type="email" name="email" class="p-3 form-control" placeholder="Enter E-mail..."  id="email" onkeydown="validation()" required/>
+              <div id="text"></div>
+              <div class="invalid-feedback">Please fill out this field.</div>
             </div>
           </div>
           <div id="contact-message">
-            <input type="text" name="message" placeholder="Enter message..." />
+            <input type="text" name="message" placeholder="Enter message..."/>
           </div>
         </div>
         <div class="text-center">
-          <button name="submit" type="submit" id="submit-btn" class="m-5">Submit</button>
+          <button name="submit" type="submit" value="submit" id="submit-btn" class="m-5">Submit</button>
         </div>
       </form>
+
+
       <?php 
             if(isset($_POST['submit'])){
                   include_once 'function.php';

@@ -63,14 +63,24 @@ input {
   width: 100%;
 }
 .name {
+  height: 260px;
   grid-area: name;
 }
 .phone {
+  height: 260px;
   grid-area: phone;
 }
+.phone input,
+.email input,
+.name input {
+  width: 100%;
+  height: 60px !important;
+}
 .email {
+  height: 260px;
   grid-area: email;
 }
+
 #contact-message {
   grid-area: message;
 }

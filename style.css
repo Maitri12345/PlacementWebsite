@@ -6,21 +6,27 @@ body {
 
 /********************navbar****************/
 nav {
-  background-color: brown;
+  background-color: #333;
   color: white;
+  
 }
 nav h1 {
-  font-size: 1.8rem !important;
+  font-size: 1.5rem !important;
 }
 nav a {
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
+header .navbar a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
 /****************contact us***************/
 
 #contact-img {
   width: 100vw;
-  height: 350px;
+  height: 600px;
 }
 #contact-img img {
   width: 100%;
@@ -31,7 +37,7 @@ nav a {
   content: "";
   position: absolute;
   width: 100vw;
-  height: 350px;
+  height: 400px;
   left: 0;
   background-color: rgba(0, 0, 0, 0.55);
 }
@@ -55,6 +61,8 @@ nav a {
     "phone message message"
     "email message message";
   grid-gap: 30px;
+ 
+  
 }
 #contact-about {
   height: 260px;
@@ -79,17 +87,34 @@ input {
 }
 #submit-btn {
   width: 120px;
-  padding: 10px;
+  padding: 20px;
+  margin-top: 80px;
   font-size: 1rem;
-  background-color: brown;
+  background-color: #333;
   color: white;
   font-weight: bold;
   border: none;
 }
 #submit-btn:hover {
   background: transparent;
-  border: 2px solid brown;
-  color: brown;
+  border: 2px solid orange;
+  color: orange;
+}
+
+
+.con-container{
+border:2px solid gray;
+background-color: rgb(26, 87, 145);
+}
+
+.name{
+  border:1px solid gray;
+}
+.phone{
+  border:4px solid gray;
+}
+.email{
+  border:4px solid gray;
 }
 
 /****************gallery***************/
@@ -196,7 +221,7 @@ footer {
   width: 100%;
   height: 300px;
   color: white;
-  background-color: brown;
+  background-color: #333;
   float: inline-end;
 }
 footer > div {
@@ -210,3 +235,83 @@ footer > div {
 span i {
   font-size: 1.7rem;
 }
+
+/****************about*******************/
+.about-us__blob{
+  
+  width: 1350px !important;
+  height: 697px !important;
+
+}
+
+.about-us__blob1{
+  
+  width: 1000px !important;
+  height:500px !important;
+
+}
+
+.form-control{
+  height:60px !important;
+  border: 1px solid black!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
